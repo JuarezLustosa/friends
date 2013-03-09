@@ -1,0 +1,35 @@
+development:
+  adapter: postgresql
+  database: friends_development
+  encoding: unicode
+  reconnect: true
+  min_messages: warning
+  pool: 15
+  timeout: 5000
+  username: 
+  password: 
+
+test: &test
+  adapter: postgresql
+  database: friends_test
+  encoding: unicode
+  reconnect: true
+  min_messages: warning
+  pool: 15
+  timeout: 5000
+  username: 
+  password: 
+
+production:
+  adapter: postgresql
+  database: friends_production
+  encoding: unicode
+  reconnect: true
+  min_messages: warning
+  pool: 15
+  timeout: 5000
+  username: 
+  password: 
+
+cucumber:
+  <<: *test
