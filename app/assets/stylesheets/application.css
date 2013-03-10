@@ -11,3 +11,6 @@
  *= require_self
  *= require_tree .
  */
+
+tr.where_iam { background-color: #CAF6DF; }
+tr.closer { background-color: #CAF6FF; }
