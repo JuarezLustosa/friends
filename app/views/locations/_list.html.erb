@@ -1,0 +1,20 @@
+<thead>
+  <tr>
+    <th>Friends</th>
+    <th>My location</th>
+    <th>Address</th>
+    <th>Latitude</th>
+    <th>Longitude</th>
+  </tr>
+</thead>
+<tbody>
+  <% locations.each do |location| %>
+    <tr class= <%= colorize_by_distance(location) %> >
+      <td><%= location.id %></td>
+      <td><%= location.my_location %></td>
+      <td><%= location.address %></td>
+      <td><%= location.latitude %></td>
+      <td><%= location.longitude %></td>
+    </tr>
+  <% end %>
+</tbody>

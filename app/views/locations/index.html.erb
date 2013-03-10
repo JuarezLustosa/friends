@@ -1,0 +1,10 @@
+<%- model_class = Location -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
+</div>
+
+<div id="list">
+  <table class="table">
+      <%= render 'list', :locations => @locations %>  
+  </table>
+</div>
